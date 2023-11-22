@@ -121,7 +121,7 @@ function highlightCurrentChunk(currentTime) {
 }
 
 function handleLoadingMessage(data) {
-  const { status } = event.data;
+  const { status } = data;
   showElement(LOADING_SPINNER_CONTAINER);
   showElement(LOADING_MESSAGE_CONTAINER);
   if (status === LoadingStatus.SUCCESS) {
